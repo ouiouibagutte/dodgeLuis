@@ -53,7 +53,7 @@ const ambientLight = new THREE.AmbientLight(0x404040, 5); // soft white light
 scene.add( ambientLight );
 //load car and penguin
 const loader = new GLTFLoader();
-loader.load( '/car.gltf', function ( gltf ) {
+loader.load( './car.gltf', function ( gltf ) {
   scene.add( gltf.scene ).scale.set(50,50,50);
   car = gltf.scene;
   car.rotation.y = 3.15;
@@ -64,7 +64,7 @@ loader.load( '/car.gltf', function ( gltf ) {
 	console.error( error );
 
 } );
-loader.load( '/luigi.glb', function ( gltf ) {
+loader.load( './luigi.glb', function ( gltf ) {
   scene.add( gltf.scene );
   var luigi = gltf.scene;
   luigi.scale.set(0.02,0.03,0.02);
