@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+  width: 100%; 
+}
+
+*{
+    margin: 0;
+}
+
+#lives{
+  position: fixed;
+  z-index: 10000;
+  top:0px;
+  left: 0px;
+  height: 20%;
+  width: 20%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#title{
+  position: absolute;
+  z-index: 10001;
+  color: white;
+  margin-left: 45%;
+}
+
+#distance{
+  margin-top: 30px;
+  position: absolute;
+  z-index: 10001;
+  color: white;
+  margin-left: 49%;
+}
+
+#highscore{
+  margin-top: 30px;
+  position: absolute;
+  z-index: 10001;
+  color: white;
+  right: 0px;
+}
