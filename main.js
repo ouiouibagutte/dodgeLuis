@@ -148,7 +148,7 @@ var animate = function () {
     livesApearance.src = "./oneLife.png";
   } else if (lives<1){
     livesApearance.remove();
-    window.alert("Reload then hit ok to play again");
+    window.location.reload();
   }
   if(carBB.intersectsBox(luigiBB) && !livesBeenReduced){
     lives--;
