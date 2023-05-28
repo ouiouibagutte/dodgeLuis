@@ -148,6 +148,7 @@ var animate = function () {
     livesApearance.src = "./oneLife.png";
   } else if (lives<1){
     livesApearance.remove();
+    alert("you lost loser");
     window.location.reload();
   }
   if(carBB.intersectsBox(luigiBB) && !livesBeenReduced){
