@@ -49,7 +49,7 @@ scene.add( stripe );
 var light = new THREE.PointLight(0xFFFFFF, 7, 0);
 light.position.set(0,3.5,-40);
 scene.add(light);
-const ambientLight = new THREE.AmbientLight(0xfc0505, 5); // soft white light
+const ambientLight = new THREE.AmbientLight(0xFFFFFF, 5); // soft white light
 scene.add( ambientLight );
 //load car and penguin
 const loader = new GLTFLoader();
@@ -148,7 +148,6 @@ var animate = function () {
     livesApearance.src = "./oneLife.png";
   } else if (lives<1){
     livesApearance.remove();
-    alert("you lost loser");
     window.location.reload();
   }
   if(carBB.intersectsBox(luigiBB) && !livesBeenReduced){
